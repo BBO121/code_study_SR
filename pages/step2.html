@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step2 - list ,images, audios + videos 태그</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        html,body{
+            margin: 0; height: 100%; scroll-behavior: smooth;
+        }
+        ul#menu{
+            position: fixed; right: 0; top: 0; background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="../index.html">돌아가기</a></li>
+        <li><a href="#list">list</a></li>
+        <li><a href="#images">images</a></li>
+        <li><a href="#audio+videos">audio+videos</a></li>
+    </ul>
+
+
+    <div id="list">
+        <h1>list 태그에 대해 알아보자!</h1>
+        <strong>&lt;ul&gt;</strong> : unordered list 의 약자
+    
+        <ul>
+           <li>속성값(bullet type)은 3개 circle, disc, square가 있으나 모두css에서 처리해야함</li>
+           <li><strong>레이아웃을 구성 할 때 같은 형태가 3회 이상 반복되고, <mark>순서가 중요하지 않은 요소</mark>를 만들때 사용한다</strong></li>
+        </ul>
+
+        <fieldset>
+            <legend><strong>[ ui>li 의 예시 ]</strong></legend>
+            <ul>
+                <li type="circle">unorderedlist1</li>
+                <li type="disc">unorderedlist2</li>
+                <li type="square">unorderedlist3</li>
+            </ul>          
+<pre><code>
+    &lt;ul&gt;
+        &lt;li type="circle"&gt;unorderedlist1&lt;/li&gt;
+        &lt;li type="disc"&gt;unorderedlist2&lt;/li&gt;
+        &lt;li type="square"&gt;unorderedlist3&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre>
+        </fieldset>
+        <br><br>
+
+        <strong>&lt;ol&gt;</strong> : ordered list 의 약자
+       
+        <ul>
+           <li>속성값(bullet type)은 5개+@ A, a, l, i, 1(decimal) 등이 있으나 모두css에서 처리해야함</li>
+           <li><strong>레이아웃을 구성 할 때 같은 형태가 3회 이상 반복되고, <mark>순서가 중요한 목록</mark>를 만들때 사용한다</strong></li>
+        </ul>
+
+        <fieldset>
+            <legend><strong>[  oㅣ>li 의 예시 ]</strong></legend>
+            <ol>
+                <li type="A">orderedList1</li>
+                <li type="a">orderedList2</li>
+                <li type="I">orderedList3</li>
+                <li type="i">orderedList4</li>
+                <li type="decimal">orderedList5</li>
+            </ol>        
+<pre><code>
+    &lt;ol&gt;
+        &lt;li type="A"&gt;orderedlist1&lt;/li&gt;
+        &lt;li type="a"&gt;orderedlist2&lt;/li&gt;
+        &lt;li type="I"&gt;orderedlist3&lt;/li&gt;
+        &lt;li type="i"&gt;orderedlist4&lt;/li&gt;
+        &lt;li type="decimal"&gt;orderedlist5&lt;/li&gt;
+    &lt;/ol&gt;
+</code></pre>
+        </fieldset>
+        <br><br>
+        <strong>&lt;dl&gt;</strong> : definition list 의 약자
+       
+        <ul>
+           <li>dt (Definition Term) : 제목</li>
+           <li>dd (Definition Description) : 설명</li>
+           <li>dt 하나에 dd를 여러 개 사용할 수 있다</li>
+           <li>dt와 dd는 여러개 작성할 수 있다</li>
+        </ul>
+
+        <fieldset>
+            <legend><strong>[ dl>dt+dd 의 예시 ]</strong></legend>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Language</dd>
+                <dd>웹페이지를 만드는 언어</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dd>웹페이지를 꾸며주는 언어</dd>
+                <dt>JavaScript</dt>
+                <dd>웹페이지에 동작을 추가하는 언어</dd>
+            </dl>       
+<pre><code>
+    &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Hyper Text Markup Language&lt;/dd&gt;
+        &lt;dd&gt;웹페이지를 만드는 언어&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+        &lt;dd&gt;웹페이지를 꾸며주는 언어&lt;/dd&gt;
+        &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;웹페이지에 동작을 추가하는 언어&lt;/dd&gt;
+    &lt;/dl&gt;  
+</code></pre>
+        </fieldset>
+        
+        <h2>기억하자!</h2>
+        <ol>
+            <li><strong>확정구조</strong> : ul, ol은 확정구조이기 때문에 직계 자손인 li 만 들어가야한다!</li>
+        </ol>
+        <br><br><br><br><br>
+    </div>
+
+
+
+    <div id="images">
+        <h1>이미지 태그에 대해 알아보자!</h1>
+
+        <mark><em>경로 = Path = 파일이 있는 위치를 적는 방식</em></mark>
+        <ul>
+            <h2>절대경로 (A.Path = Absolute Path)</h2>
+            <p>현재 존재하는 소프트웨어적 최상위 기준으로부터 시작하여 <mark>모든 경로를 기술하는 방식</mark> > 싹다 적으라는 뜻</p>
+            
+            <li>ex1. 컴퓨터 : C:/Users/kingh/OneDrive/Desktop/SR/project/code_study_SR/pages/step2.html</li>
+            <li>
+                ex2. 웹 개발 환경 : /(root)/pages/step2.html
+                <ul>
+                    <li>(root) : 그 폴더의 가장 최상위 폴더</li>
+                </ul>
+            </li>
+            <li>
+                ex3. 고객 방문 환경 : DNS (ex. http://www.thespesieslab.com)
+                <ul>
+                    <li>DNS - Domain Naming Service</li>
+                </ul>
+            </li>
+            <br><br>
+            
+            <h2>상대경로 (R.Path = Relaive Path)</h2>
+            <p>현재파일을 기준으로 파일의 위치를 작성하는 방법<br>현재 파일에서 <mark>목적지까지 이동하는 경로</mark>만 적는다</p>
+
+            <li>
+                ex1. 현재 이미지 파일 불러오기 > 같은 선상에 있는 "images"폴더를 적고 파일명만 적으면 끝 <br>
+                <em> <strong> "images/file_example_JPG_2500KB.jpg"</strong></em>
+            </li>
+            <li> 단, 상위폴더를 칭해야 할때 = <strong>"../"</strong> 한번 사용 할 때마다 한단계 상위</li>
+
+        </ul>
+
+        <img src="../images/image_sample.jpg" alt="늘어져버린쬬이" style="width: 30%;">
+
+    </div>
+    
+        
+  
+    
+    <!-- src, alt를 attribute = attr();라고 부름. / properties = props(); (속성) -->
+    <!-- 웹상에서 경로를 표현하는 두가지 방법 -->
+        <!-- src : 나는 가만히 있을테니까 니가 와!!! (외부에 있는걸 끌고 오는것) -->
+        <!-- href : 내가 갈테니까 기다려~ -->
+
+
+    <div id="audio+videos">
+        오디오비디오
+    </div>
+    
+    
+</body>
+</html>
