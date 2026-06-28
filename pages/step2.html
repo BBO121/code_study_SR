@@ -121,9 +121,10 @@
 
 
 
-    <div id="images">
-        <h1>이미지 태그에 대해 알아보자!</h1>
 
+    <div id="images">
+        <hr>
+        <h1>이미지 태그에 대해 알아보자!</h1>
         <mark><em>경로 = Path = 파일이 있는 위치를 적는 방식</em></mark>
         <ul>
             <h2>절대경로 (A.Path = Absolute Path)</h2>
@@ -157,21 +158,39 @@
 
         <img src="../images/image_sample.jpg" alt="늘어져버린쬬이" style="width: 30%;">
 
+        <fieldset>
+            <ul>
+                <h3>&lt;img&gt; 태그 : 이미지를 불러오는 태그</h3>
+<pre><code>
+    &lt;img src="../images/image_sample.jpg" alt="늘어져버린쬬이" style="width: 30%;"&gt;
+</code></pre>
+                <br>
+                <li><strong>src</strong> : <em>"나는 가만히 있을테니까 너가 와~!!"</em><mark>가져와!</mark></li>
+                <li><strong>href</strong> : <em>"내가 갈테니까 기다려~</em><mark>연결해!</mark></li>
+            </ul>
+            <ul>
+                <li>
+                    <strong>alt</strong> : aleternaver Text = 대체 텍스트 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    시각장애인들은 이미지를 볼 수 없기 떄문에 이미지의 내용을 전달하기 위함.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    안정화된 최대 자수는 255자 이내 권장, 이상 초과 될 경우 longdesc라는 attr이 있었으나 현재는 사용불가로 전환됨.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    figure / figcaption tag를 사용해야함.
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><strong>attr 이란 ?</strong></legend>
+            <p>
+                <strong>attr(Attribute) = 태그의 속성</strong><br>
+                태그의 추가 정보를 주거나 동작을 설정하는 역할<br><br>
+                attr 예시 > stc, href, alt, id, class, title, width, height, style 등
+            </p>
+        </fieldset>
     </div>
-    
-        
-  
-    
-    <!-- src, alt를 attribute = attr();라고 부름. / properties = props(); (속성) -->
-    <!-- 웹상에서 경로를 표현하는 두가지 방법 -->
-        <!-- src : 나는 가만히 있을테니까 니가 와!!! (외부에 있는걸 끌고 오는것) -->
-        <!-- href : 내가 갈테니까 기다려~ -->
-
-
+ 
     <div id="audio+videos">
         오디오비디오
     </div>
     
-    
+
 </body>
 </html>
