@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div, semantic 태그</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        html,body{
+            margin: 0; scroll-behavior: smooth;
+        }
+        ul#menu{
+            position: fixed; right: 0; top: 0; background-color: white;
+        }
+        div{
+            height: 100%;
+        }
+        .example-box{
+            max-width: 900px;
+            border: 1px solid #999;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>화면 개발 수업</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#divSpan">divSpan</a></li>
+                <li><a href="#semantic">semantic</a></li>
+                <li><a href="#HTML5AddTags">HTML5AddTags</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="divSpan">
+            <h2>div와 span에 대해 알아보자!</h2>
+            <article>
+                <p><strong>&lt;div&gt;</strong> : divide (분할) 를 줄여서 만든 대형공간 Tag. <mark><strong>display : block</strong></mark></p>
+                <ul>
+                    <li>web2.0 시절에 태어나 대부분의 공간분할 문제를 해결해주던 Tag</li>
+                    <li>현재도 굉장히 많이 사용되기 때문에 <mark>무분별한 사용에 주의해야한다</mark></li>
+                    <li>어느공간에도 제약이 없는 tag = html5의 구조와 의미를 규칙적으로 표현하기 힘들다</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;span&gt;</strong> : span(잘 늘어나다) 라는 의미의 소형 공간 tag. <mark><strong>display : inline</strong></mark></p>
+                <ul>
+                    <li>글자 일부를 묶을 때 사용</li>
+                    <li>줄바꿈이 되지 않음</li>
+                    <li>의미는 없고, 일부 스타일을 적용하거나 css,js를 적용할때 사용</li>
+                </ul>
+            </article>
+        </section>
+        <br><br>
+        <section id="semantic">
+            <h2>semantic 태그에 대해 알아보자!</h2>
+            <article>
+                <p><strong>&lt;section&gt;</strong> : 하나의 주제를 묶는 큰 영역 태그</p>
+                <p><em>section 에는 제목(h)을 넣어줘야 한다. (권장)</em></p>
+                <ul>
+                    <li>복합적인 content group (관련된 내용을 하나의 주제로 묶는 공간)</li>
+                    <li>일반적인 시스템에서는 body의 직계에서, 한 페이지 단위를 구성하는 개념이기 때문에, h2가 거의 고정이라고 생각하면됨</li>
+                    <li>이례적으로 onepage의 경우 각 항목별로 section사용</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;article&gt;</strong> : article =  기사 / 아티클 자체로 이해가 될 수 있고, 독립적으로 취급 될 수 있는 문서에 사용되는 tag</p>
+                <p><em>article 에는 제목(h)을 넣어줘야 한다. (권장)</em></p>
+                <ul>
+                    <li>신문기사, 블로그 포스트, 인스타 피드 등에 사용 가능</li>
+                    <li>time tag, cite tag 등을 같이 사용하게 된다</li>
+                    <li>section 안에서 사용될 경우 > h3</li>
+                    <li>독립적인 콘텐츠로 사용될 경우 > h2</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;time&gt;</strong> : 날짜와 시간을 나타내는 태그</p>
+
+                <div class="example-box">
+                    <time datetime="2026-06-29T10:42:00+09:00">2026년 6월 29일 10시 42분</time>
+                    <pre><code>
+        &lt;time datetime="2026-06-29T10:42:00+09:00"&gt;2026년 6월 29일 10시 42분&lt;/time&gt;
+                    </code></pre>
+                </div>
+               
+                <ul>
+                    <li>time 안에 기입하는 날짜와 시간을 사람에게 전달하는 목적</li>
+                    <li>이것을 기준으로 표현방식을 재현하여 태그안에 출력한다 (ex > 2026년 6월 29일...)</li>
+                    <li><mark>자동으로 시간을 출력하는건 아니고, 내가 원하는 시간을 표시하는것 뿐!</mark></li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;cite&gt;</strong> 저작권 관련 표기 명칭</p>
+                <ul>
+                    <li>제목, 인용한 대상, 작성자, 그림명 등등</li>
+                </ul>
+            </article>
+             <article>
+                <p><strong>&lt;aside&gt;</strong> 전체적으로 사용하는 global 중 좌, 우 측에에 있는 menu, bannerBar, quickMenu, FloatingAction...등의 content가 들어가는 aside </p>
+            </article>
+            <br>
+            <article>
+                <h3>&lt;footer&gt;</h3>
+                <p>저작권정보, 회사주소, 증명/신고내용, 법률관련정보, 결제가 이루어지는 곳이면 반품/환불/교환 정책등이 들어가는 하단 공통 영역(global)</p>
+                <ul>
+                    <li><strong>&lt;p&gt;</strong> 저작권 정보</li>
+                    <li><strong>&lt;address&gt;</strong> 회사주소(일상생활에 사용하는 주소, 이메일 주소, 전화번호 등등 컨택할 수 있는 모든 수단)</li>
+                    <li><strong>&lt;p&gt; or &lt;blockquote&gt;</strong> 증명/신고내용 </li>
+                    <li><strong>&lt;a href="#"&gt;</strong>개인정보취급방침<strong>&lt;/a&gt;</strong></li>
+                    <li><strong>&lt;a href="#"&gt</strong>;이용약관<strong>&lt;/a&gt;</strong></li>
+                    <li><strong>&lt;a href="#"&gt;</strong>반품/환불/교환정책<strong>&lt;/a&gt;</strong></li>
+                    <small>#은 href 비어있으면 오류나서 넣어둔것임!!</small>
+                </ul>
+            </article>
+        </section>
+        <br><br>
+        <section id="HTML5AddTags">
+            <h2>HTML5 이후에 추가된 태그를 알아보자!</h2>
+            <article>
+                <p><strong>&lt;figure&gt;</strong> : figure = 흉상, 동상 / 상징적인 의미를 담은 image의 경우 사용할 수 있는 tag</p>
+                <p><strong><mark>확정구조</mark></strong> img를 쓰고 figcaption 쓰고 끝나야함!</p>
+                <div class="example-box">
+                    <figure>
+                        <img src="https://placehold.co/150" alt="undefined image">
+                        <figcaption>아직 정의되지 않은 이미지</figcaption>
+                    </figure>
+                    <pre><code>
+        &lt;figure&gt;
+            &lt;img src="https://placehold.co/150" alt="undefined image"&gt;
+            &lt;figcaption>아직 정의되지 않은 이미지&lt;/figcaption&gt;
+        &lt;/figure&gt;
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>image의 비중이 text보다 많이 느껴질 경우 사용</li>
+                    <li>이미지가 더 중요한 느낌으로 텍스트는 이미지를 보조하는 느낌</li>
+                    <li>img tag의 alt 대용으로 figcaption이 사용 가능 (웹 접근성 측면에서도 좋음)</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;progress&gt;</strong> : 나타내고픈 진행상황을 실시간으로 나타낼 때 사용하는 tag</p>
+                <div class="example-box">
+                    <progress value="20" max="100"></progress>
+                    <pre><code>
+        &lt;progress value="20" max="100"&gt;&lt;/progress&gt;
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>보통 max 100은 바꿀일은 없음</li>
+                    <li>value = 사용값 / max = 최대값</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;meter&gt;</strong> : 현재 사용량이나 소모된 량 등의 정지된 산출값에 사용하는 tag</p>
+                <div class="example-box">
+                    <meter value="80" min="10" max="100" low="20" high="90"></meter>80%
+                    <pre><code>
+        &lt;meter value="80" min="10" max="100" low="20" high="90"&gt;&lt;/meter&gt;80%
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>로우와 하이가 있다는 것 = 위험을 감지할 수 있다는 개념 <br><small>너무 낮아서 위험! 너무 높아서 위험! 이런게 가능. 전압이라던가...</small></li>
+                    <li>value = 현재값, min = 최소값, max = 최대값, low = 낮다의 기준범위, high = 높다의 기준범위, optimum= 적당하다의 기준범위</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;details&gt;</strong> 접기/펼치기가 가능한 tag</p>
+                <div class="example-box">
+                    <details>
+                        <summary>이렇게 크게 메뉴를 쓰고 (누르기가넝)</summary>
+                        <p>여기 안에 세부 내용을 쓰는거에용!</p>
+                    </details>
+                    <pre><code>
+        &lt;details&gt;
+            &lt;summary&gt;이렇게 크게 메뉴를 쓰고 (누르기가넝)&lt;/summary&gt;
+            &lt;p&gt;여기 안에 세부 내용을 쓰는거에용!&lt;/p&gt;
+        &lt;/details&gt;
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>summary 는 details 에만 들어갈 수 있다</li>
+                    <li>summary 에는 무엇을 사용해도 상관없다 <mark>display : block</mark></li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;address&gt;</strong>실제 사용 주소뿐 아니라 url 등의 주소, 연락처 관련 정보들을 담는 전용 Tag</p>
+                <div class="example-box">
+                    <address>
+                        <span>인천광역시 부평구 부평동 194-23 SBS아카데미컴퓨터아트학원 부평</span><br>
+                        <a href="https://www.incheon.sbsart.com">사이트바로가기</a><br>
+                        <a href="tel:+82324270111">전화걸기</a><br>
+                        <a href="mailto:privacy@loreadugroup.com">이메일보내기</a><br>
+                        <a href="https://earth.google.com/web/search/%ec%9d%b8%ec%b2%9c%ea%b4%91%ec%97%ad%ec%8b%9c+%eb%b6%80%ed%8f%89%ea%b5%ac+%eb%b6%80%ed%8f%89%eb%8f%99+%ec%9d%b8%ec%b2%9c%ec%bb%b4%ed%93%a8%ed%84%b0%ed%95%99%ec%9b%90-SBS%ec%95%84%ec%b9%b4%eb%8d%b0%eb%af%b8%ec%bb%b4%ed%93%a8%ed%84%b0%ec%95%84%ed%8a%b8%ed%95%99%ec%9b%90/@37.49215605,126.72397655,19.74015497a,818.18242228d,35y,0h,0t,0r/data=CiwiJgokCS9O5bFJEUNAEecnG-cHdULAGWA5uDoYpFBAIbDf5twPHknAQgIIAToDCgEwQgIIAEoNCP___________wEQAA?hl=ko" target="_blank">지도보기</a>
+                    </address>
+                    <pre><code>
+        &lt;address&gt;
+            &lt;span&gt;인천광역시 부평구 부평동 194-23 SBS아카데미컴퓨터아트학원 부평&lt;/span&gt;
+            &lt;a href="https://www.incheon.sbsart.com"&gt;사이트바로가기&lt;/a&gt;
+            &lt;a href="tel:+82324270111"&gt;전화걸기&lt;/a&gt;
+            &lt;a href="mailto:privacy@loreadugroup.com"&gt;이메일보내기&lt;/a&gt;
+            &lt;a href="https://earth.google.com/web/search/%ec%9d%b8%e_사이트생략" target="_blank"&gt;지도보기&lt;/a&gt;
+        &lt;/address&gt;
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>통상적으로는 footer Tag안에 들어가는 것이 일반적</li>
+                    <li>mapApi(naver map, kakao map, google map..)를 동작 시키기 위해 실제 사용주소에 a를 사용하기도 함</li>
+                    <li>마이크로포맷으로 작성되는 vcard 형식은 http://microformats.org/code/hcard/creator 에서 만들어서 사용하면 된다.</li>
+                    <small>vcard : 전자명함을 뜻하며, 안드로이드 와 ios 에서 범용적으로 사용되는 연락처 방식</small>
+            
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;main&gt;</strong> main페이지 자체를 의미</p>
+                <ul>
+                    <li>단 한번의 사용을 권장</li>
+                    <li>최상위 구조(body 직계)에만 사용 가능 (div 같은걸로 감싼다거나 그러면 안됨)</li>
+                </ul>
+            </article>
+
+            <article>
+                <p><strong>&lt;output&gt;</strong> form에 지정된 스크립트 연산처리를 출력하는 전용태그</p>
+                <div class="example-box">
+                    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+                        0<input type="range" id="a" value="50" step="1" min="1" max="100">100
+                        +
+                        <input type="number" id="b" value="50" step="1">
+                        =
+                        <output id="x" for="a b"></output>
+                    </form>
+                </div>
+                <ul>
+                    <li>js 등의 계산 결과를 출력하는 태그</li>
+                    <li>계산기, 쇼핑몰 총 금액 등에 활용 가능</li>
+                </ul>
+            </article>
+
+            <article>
+                <p><strong>&lt;keygen&gt;</strong>보안키 생성에 사용되던 tag </p>
+                <ul>
+                    <li>backend development 보안 주요사항</li>
+                    <li>보안키 생성 및 공개키 제출시에 개인 키는 개인에 저장되고 공개키만 서버로 전송</li>
+                </ul>
+
+            </article>
+            <article>
+                <p><strong>&lt;ruby&gt;</strong> 요미가나같은 읽는 방법을 표현하는 tag </p>
+                <div class="example-box">
+                    <ruby>
+                        韓 <rt>かん</rt>
+                    </ruby>
+                    <pre><code>
+        &lt;ruby&gt; 
+            韓 &lt;rt&gt;かん&lt;/rt&gt;
+        &lt;/ruby&gt;
+                    </code></pre>
+                </div>
+                <ul>
+                    <li>국내 웹사이트에선 많이 쓰이지 않지만, 교육사이트나 사전, 일본 관련 사이트에선 꽤 자주 볼 수 있는 태그</li>
+                    <li>이외 부가문장이 필요하면 &lt;rp&gt;&lt;/rp&gt;사용</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>&lt;bdi&gt;</strong> 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용하는 태그 </p>
+                <div class="example-box">
+                    <ul>
+                        <li>User <bdi>hrefs</bdi>: 60 points</li>
+                        <li>User <bdi>jdoe</bdi>: 80 points</li>
+                        <li>User <bdi>إيان</bdi>: 90 points</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <small>
+            화면 개발 수업<br>
+            Mabe BY. SR Yoon <br>
+            © 2026 All Rights Reserved.
+        </small>
+    </footer>
+</body>
+</html>
