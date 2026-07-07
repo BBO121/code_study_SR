@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>step1 - h태그와 p태그</title>
+    <title>퍼블 공부 하기!</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         html,body{
@@ -15,6 +15,13 @@
         div{
             height: 100%;
         }
+        .example-box{
+            max-width: 900px;
+            border: 1px solid #999;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #fafafa;
+        }
     </style>
 </head>
 <body>
@@ -23,60 +30,61 @@
         <nav>
             <ul id="menu">
                 <li><a href="../index.html">돌아가기</a></li>
-                <li><a href="#heading">heading</a></li>
-                <li><a href="#paragraph">paragraph</a></li>
+                <li><a href="#headingArea">heading</a></li>
+                <li><a href="#paragraphArea">paragraph</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="heading">
-            <header>
-                <h1>태그에 대해 알아보자!</h1>
-            </header>
-            <h1>&lt;h1&gt; :: heading - 1</h1>
+        <section id="headingArea">
+                <h2>태그에 대해 알아보자!</h2>
+            <p>
+                &lt;h1&gt; :: heading - 1 <br>
+                <small>&gt;&gt;&gt;한 페이지에 h1을 두개쓸수가 없어서 얘는 어쩔수없이 작은데... 암튼 큰애임 h1</small>
+            </p>
+            <ul>
+                <li>제일 크고 제일 중요함.</li>
+                <li>ci, bi, logo 등에 사용
+                    <ul>
+                        <li>bi : Brand Identity</li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <h2>&lt;h2&gt; :: heading - 2</h2>
                 <ul>
-                    <li>제일 크고 제일 중요함.</li>
-                    <li>ci, bi, logo 등에 사용
-                        <ul>
-                            <li>bi : Brand Identity</li>
-                        </ul>
-                    </li>
+                    <li>페이지 자체의 제목 (각 섹션별 제목)</li>
+                    <li>body안에서 열리는 가장 큰 공간단위</li>
                 </ul>
                 <div>
-                    <h2>&lt;h2&gt; :: heading - 2</h2>
+                    <h3>&lt;h3&gt; :: heading - 3</h3>
+                    <ul>
+                        <li>h2의 박스 단위의 제목</li>
+                    </ul>
+                    <div>
+                        <h4>&lt;h4&gt; :: heading - 4</h4>
                         <ul>
-                            <li>페이지 자체의 제목 (각 섹션별 제목)</li>
-                            <li>body안에서 열리는 가장 큰 공간단위</li>
+                            <li>h3의 박스 단위의 제목</li>
                         </ul>
                         <div>
-                            <h3>&lt;h3&gt; :: heading - 3</h3>
+                            <h5>&lt;h5&gt; :: heading - 5</h5>
+                            <ul>
+                                <li>거의 쓸일이 없다....</li>
+                            </ul>
+                            <div>
+                                <h6>&lt;h6&gt; :: heading - 6</h6>
                                 <ul>
-                                    <li>h2의 박스 단위의 제목</li>
+                                    <li>내가 얘 까지 쓰고있다면 코드를 그지같이 치고 있지 않은지 고민해보자....</li>
                                 </ul>
-                                <div>
-                                    <h4>&lt;h4&gt; :: heading - 4</h4>
-                                        <ul>
-                                            <li>h3의 박스 단위의 제목</li>
-                                        </ul>
-                                        <div>
-                                            <h5>&lt;h5&gt; :: heading - 5</h5>
-                                                <ul>
-                                                    <li>거의 쓸일이 없다....</li>
-                                                </ul>
-                                                <div>
-                                                    <h6>&lt;h6&gt; :: heading - 6</h6>
-                                                        <ul>
-                                                            <li>내가 얘 까지 쓰고있다면 코드를 그지같이 치고 있지 않은지 고민해보자....</li>
-                                                        </ul>
-                                                </div>
-                                        </div>
-                                </div>    
+                            </div>
                         </div>
+                    </div>    
                 </div>
-            <fieldset>
-                <legend>기억하자!</legend>
-                    <ul>
-                        <li>h2~h6은 div안에 들어가야한다!</li>
+            </div>
+            <div class="example-box">
+                <p><strong>기억하자!</strong></p>
+                <p>h2~h6은 div안에 들어가야한다!</p>
+            
             <pre><code>
                 &lt;h1&gt;Heading - 1 &lt;/h1&gt;
                 &lt;div&gt;
@@ -95,14 +103,13 @@
                     &lt;/div&gt;
                 &lt;/div&gt;
             </code></pre>
-                    </ul>
-            </fieldset>
+            </div>
         
         
         </section>
-        <section id="paragraph">
+        <section id="paragraphArea">
             <hr>
-            <header><h1>p태그에 대해 알아보자!</h1></header>
+            <h2>p태그에 대해 알아보자!</h2>
             <table>
                 <tbody>
                     <tr>
@@ -173,66 +180,56 @@
             <ul>
                 <li><strong>&lt;hr&gt;</strong> : horizontal Rule / 단순한 수평선이 아니라 선을 기준으로 위, 아래 주제 자체가 바뀐다는 뜻</li>
                 <li><strong>&lt;blockquote&gt;</strong> : block 상태 인용부</li>
-                <blockquote>이것이 block 상태의 인용부 입니다! <br>block 은 태어나자마자 너비를 100으로 가집니다!</blockquote>
+                <li><blockquote>이것이 block 상태의 인용부 입니다! <br>block 은 태어나자마자 너비를 100으로 가집니다!</blockquote></li>
                 <li><strong>&lt;q&gt;</strong> : inline 의 인용문</li>
-                <q>이것이 q 인용문입니다! " " 이 따옴표를 따로 쓰지 않아도 알아서 써진답니다!!</q>
+                <li><q>이것이 q 인용문입니다! " " 이 따옴표를 따로 쓰지 않아도 알아서 써진답니다!!</q></li>
             </ul>
         
-            <fieldset>
-                <legend><em>block 과 inline 이란?</em></legend>
-                <h4>display : block; (위에서부터 떨어지는 태그들) > inline-block; > inline; (글자처럼 한줄로 쭉 있는) </h4>
-                <h3>[ block ]</h3>
+            <div class="example-box">
+                <p><em>block 과 inline 이란?</em></p>
+                <p><strong>display : block; (위에서부터 떨어지는 태그들) > inline-block; > inline; (글자처럼 한줄로 쭉 있는)</strong></p> 
+                <p>[ block ]</p>
                 <ul>
                     <li>태어나자마자 가로 너비 100%를 가진다</li>
                     <li>항상 새로운 줄에서 시작한다</li>
                     <li>블록 태그 안에는 블록, 인라인 태그 보두 들어갈 수 있다</li>
                     <li>대표태그 : div, h1~h6, p, ul, ol, li, tabel, blockquote</li>
                 </ul>
-                <h3>[ inline ]</h3>
+                <p>[ inline ]</p>
                 <ul>
                     <li>내용(content)만큼만 너비를 가진다</li>
                     <li>줄바꿈이 일어나지 않는다</li>
                     <li>문장 안에서 사용된다</li>
                     <li>대표태그 : a, strong, em, b, i, q, sub</li>
                 </ul>
-            </fieldset>
+            </div>
             <br>
-            <fieldset>
-                <legend><strong>기억하자!!</strong></legend>
-                <ol>
-                    <li>기능태그 vs 마크업 태그</li>
-                    <br>
-                        <ul>
-                            <strong>[ 기능 태그 (Void Element) ]</strong>
-                            <li>혼자 기능을 수행하는 태그</li>
-                            <li>닫는 태그가 없다!</li>
-                            <li>ex> br, hr, img, input... </li>
-                            <br>
-                            <strong>[ 마크업태그 (Markup)]</strong>
-                            <li>내용을 감싸서 구조와 의미를 만드는 태그</li>
-                            <li>시작 태그와 종료태그가 있고 내용을 감싼다!</li>
-                            <li>ex> h1, p, div</li>
-                        </ul>
-                    <br>
-                    <li>브라우저의 기본 글자 크기는 보통 <mark>16px</mark>이다!</li>
-                    <br>
-                    <li>외워보자 용어!</li>
-                    <br>
-                        <ul>
-                            <li><strong>자간</strong> : 글자와 글자 사이</li>
-                            <li><strong>행간</strong> : 줄과 줄 사이</li>
-                            <li><strong>문단 간격</strong> : 문단과 문단 사이</li>
-                        </ul>
-                    <br>
-                    <li>더미데이터 사용법</li>
-                    <br>
-                    <ul>
-                        <li>lorem > tab</li>
-                        <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium possimus, incidunt adipisci molestiae vero corrupti tempora dignissimos deserunt laboriosam repellat nemo sapiente dolorum perspiciatis quisquam a voluptatibus natus, quo nesciunt quae nobis repellendus? Libero nulla quis sequi repellendus id velit praesentium reiciendis debitis dolores. Ducimus, necessitatibus et. Quis, modi optio.</blockquote>
-
-                    </ul>
-                </ol>
-            </fieldset>
+            <div class="example-box">
+                <p><strong>기억하자!!</strong></p>
+                <dl>
+                    <dt>기능태그 vs 마크업 태그</dt>
+                    <dd><strong>[ 기능 태그 (Void Element) ]</strong></dd>
+                    <dd>혼자 기능을 수행하는 태그</dd>
+                    <dd>닫는 태그가 없다!</dd>
+                    <dd>ex> br, hr, img, input...</dd>
+                    <dt><strong>[ 마크업태그 (Markup)]</strong></dt>
+                    <dd>내용을 감싸서 구조와 의미를 만드는 태그</dd>
+                    <dd>시작 태그와 종료태그가 있고 내용을 감싼다!</dd>
+                    <dd>ex> h1, p, div</dd>
+                </dl>
+                <p>브라우저의 기본 글자 크기는 보통 <mark>16px</mark>이다!</p>
+                <dl>
+                    <dt><strong>자간</strong></dt>
+                    <dd>글자와 글자 사이</dd>
+                    <dt><strong>행간</strong></dt>
+                    <dd>줄과 줄 사이</dd>
+                    <dt><strong>문단 간격</strong></dt>
+                    <dd>문단과 문단 사이</dd>
+                </dl>
+                <p>더미데이터 사용법</p>
+                <p>lorem > tab</p>
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium possimus, incidunt adipisci molestiae vero corrupti tempora dignissimos deserunt laboriosam repellat nemo sapiente dolorum perspiciatis quisquam a voluptatibus natus, quo nesciunt quae nobis repellendus? Libero nulla quis sequi repellendus id velit praesentium reiciendis debitis dolores. Ducimus, necessitatibus et. Quis, modi optio.</blockquote>
+            </div>
         </section>
     </main>
     <hr>
