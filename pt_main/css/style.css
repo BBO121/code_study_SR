@@ -1,0 +1,84 @@
+/* 폰트 */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Paperlogy', sans-serif; line-height: 1.5; background-color: #fff8f8; margin: 0px;
+}
+
+/* 기본 설정 */
+a{
+    text-decoration: none; color: black;
+}
+
+/* 로고 이미지 조정 */
+header h1 img{ 
+    width: 150px; height: auto; padding-left: 20px;
+}
+
+/* 상단바 영역 */
+header{
+    display: flex; align-items:center; background-color: white; box-shadow: 0 1px 4px rgba(0,0,0,.06); height: 80px;
+}
+header nav{
+    flex: 1;
+}
+header nav ul{
+    display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; justify-content: center;
+}
+
+/* 사이드바랑 콘텐츠 가로로 배치 (display : flex) */
+main{
+    display: flex;
+}
+.contentArea nav ul{
+    display: flex; gap: 10px; list-style: none; margin: 0; padding: 0;
+}
+
+/* 콘텐츠 영역 */
+.contentArea{
+    flex: 1; padding-left: 40px; padding-top: 30px;
+}
+/* 콘텐츠 - 버튼 */
+.btn-page1,.btn-page2{
+    display: inline-block; border-color: pink; padding: 8px; border-radius: 5px;
+}
+.btn-page1{
+    background-color: rgb(255, 215, 215);
+}
+.btn-page2{
+    background-color: rgb(255, 185, 185);
+}
+.contentArea section{
+    scroll-margin-top: 30px;
+}
+/* 콘텐츠 - 요소 */
+.example-box{
+    max-width: 900px; border: 2px solid rgb(249, 157, 167); padding: 15px; margin: 20px 0; background-color: white;
+}
+
+/* 사이드바 영역 */
+aside{
+    flex-shrink: 0; background-color: #ffffff; width: 230px; align-self:flex-start;
+    margin:30px 0 0 30px; border-radius:20px; overflow:hidden; box-shadow:0 4px 16px rgba(0, 0, 0, 0.08);
+}
+aside nav ul{
+    list-style: none; margin: 0; padding: 0;
+}
+aside nav ul li ol{
+    list-style: none; margin: 0; padding-top: 10px;
+}
+/* 사이드바 - 1 depth */
+aside>nav>ul>li>a{
+    display: block; padding: 15px 20px; border-bottom: 1px solid #ccc; color: #222; font-weight: bold;
+}
+/* 사이드바 - 2 depth */
+aside nav ul li ol li a{
+    display: block; padding: 8px 20px 8px 50px; color: #555;
+}
+ol{
+    padding: 10px;
+}

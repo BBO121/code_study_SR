@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블공부하기!</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="/pt_main/images/logo.png" alt="welcome to BBoblising!">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">개요</a></li>
+                <li><a href="summary.html">수업</a></li>
+                <li><a href="practice.html">실습</a></li>
+                <li><a href="#">개인연습</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">HTML</a>
+                        <ol>
+                            <li><a href="summary.html">h & p </a></li>
+                            <li><a href="html_02.html">list & images</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="html_06.html">div & semantic</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">CSS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">JS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="contentArea">
+            <h2>list 태그에 대해 알아보자!</h2>
+            <nav>
+                <ul>
+                    <li><a class="btn-page1" href="#ulSummary"><strong>ul</strong></a></li>
+                    <li><a class="btn-page1" href="#olSummary"><strong>ol</strong></a></li>
+                    <li><a class="btn-page1" href="#ddSummary"><strong>dd</strong></a></li>
+                    <li><a class="btn-page2" href="#imageSummary"><strong>image Tag's</strong></a></li>
+                    <li><a class="btn-page2" href="#mediaSummary"><strong>media Tag's</strong></a></li>
+                </ul>
+                </ul>
+            </nav>
+            
+            <section id="ulSummary">
+                <h2>
+                    <strong>&lt;ul&gt;</strong> : unordered list 의 약자
+                </h2>
+                <ul>
+                    <li>
+                        속성값(bullet type)은 3개 circle, disc, square가 있으나 모두css에서 처리해야함
+                    </li>
+                    <li>
+                        <strong>레이아웃을 구성 할 때 같은 형태가 3회 이상 반복되고, <mark>순서가 중요하지 않은 요소</mark>를 만들때 사용한다</strong>
+                    </li>
+                </ul>
+                <div class="example-box">
+                    <h3>[ ui>li 의 예시 ]</h3>
+                    <ul>
+                        <li type="circle">unorderedlist1</li>
+                        <li type="disc">unorderedlist2</li>
+                        <li type="square">unorderedlist3</li>
+                    </ul>          
+                <pre><code>
+                    &lt;ul&gt;
+                        &lt;li type="circle"&gt;unorderedlist1&lt;/li&gt;
+                        &lt;li type="disc"&gt;unorderedlist2&lt;/li&gt;
+                        &lt;li type="square"&gt;unorderedlist3&lt;/li&gt;
+                    &lt;/ul&gt;
+                </code></pre>
+                </div>
+            </section>
+            <section id="olSummary">
+                <h2>
+                    <strong>&lt;ol&gt;</strong> : ordered list 의 약자
+                </h2>        
+                <ul>
+                    <li>
+                        속성값(bullet type)은 5개+@ A, a, l, i, 1(decimal) 등이 있으나 모두css에서 처리해야함
+                    </li>
+                    <li>
+                        <strong>레이아웃을 구성 할 때 같은 형태가 3회 이상 반복되고, <mark>순서가 중요한 목록</mark>를 만들때 사용한다</strong>
+                    </li>
+                </ul>
+                <div class="example-box">
+                    <h3>[ ol>li 의 예시 ]</h3>
+                    <ol>
+                        <li type="A">orderedList1</li>
+                        <li type="a">orderedList2</li>
+                        <li type="I">orderedList3</li>
+                        <li type="i">orderedList4</li>
+                        <li type="decimal">orderedList5</li>
+                    </ol>        
+                <pre><code>
+                    &lt;ol&gt;
+                        &lt;li type="A"&gt;orderedlist1&lt;/li&gt;
+                        &lt;li type="a"&gt;orderedlist2&lt;/li&gt;
+                        &lt;li type="I"&gt;orderedlist3&lt;/li&gt;
+                        &lt;li type="i"&gt;orderedlist4&lt;/li&gt;
+                        &lt;li type="decimal"&gt;orderedlist5&lt;/li&gt;
+                    &lt;/ol&gt;
+                </code></pre>
+                </div>
+            </section>
+            <section id="ddSummary">
+                <h2>
+                    <strong>&lt;dl&gt;</strong> : definition list 의 약자
+                </h2>
+                <ul>
+                    <li>dt (Definition Term) : 제목</li>
+                    <li>dd (Definition Description) : 설명</li>
+                    <li>dt 하나에 dd를 여러 개 사용할 수 있다</li>
+                    <li>dt와 dd는 여러개 작성할 수 있다</li>
+                </ul>
+                <div class="example-box">
+                    <h3>[ dl>dt+dd 의 예시 ]</h3>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Hyper Text Markup Language</dd>
+                        <dd>웹페이지를 만드는 언어</dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheets</dd>
+                        <dd>웹페이지를 꾸며주는 언어</dd>
+                        <dt>JavaScript</dt>
+                        <dd>웹페이지에 동작을 추가하는 언어</dd>
+                    </dl>       
+                <pre><code>
+                    &lt;dl&gt;
+                        &lt;dt&gt;HTML&lt;/dt&gt;
+                        &lt;dd&gt;Hyper Text Markup Language&lt;/dd&gt;
+                        &lt;dd&gt;웹페이지를 만드는 언어&lt;/dd&gt;
+                        &lt;dt&gt;CSS&lt;/dt&gt;
+                        &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+                        &lt;dd&gt;웹페이지를 꾸며주는 언어&lt;/dd&gt;
+                        &lt;dt&gt;JavaScript&lt;/dt&gt;
+                        &lt;dd&gt;웹페이지에 동작을 추가하는 언어&lt;/dd&gt;
+                    &lt;/dl&gt;  
+                </code></pre>
+                </div>
+            </section>
+
+            <div class="example-box">
+                <h2>기억하자!</h2>
+                <p>
+                    <strong>확정구조</strong> : ul, ol은 확정구조이기 때문에 직계 자손인 li 만 들어가야한다!   
+                </p>
+            </div>
+            <section id="imageSummary">
+                <h2>이미지 태그에 대해 알아보자!</h2>
+                <mark><em>경로 = Path = 파일이 있는 위치를 적는 방식</em></mark>
+                <article>
+                    <h3>절대경로 (A.Path = Absolute Path)</h3>
+                    <p>
+                        현재 존재하는 소프트웨어적 최상위 기준으로부터 시작하여 <mark>모든 경로를 기술하는 방식</mark> &gt; 싹다 적으라는 뜻
+                    </p>
+                    <ul>
+                        <li>
+                            ex1. 컴퓨터 : C:/Users/kingh/OneDrive/Desktop/SR/project/code_study_SR/pages/step2.html
+                        </li>
+                        <li>
+                            ex2. 웹 개발 환경 : /(root)/pages/step2.html
+                            <ol>
+                                <li>
+                                    (root) : 그 폴더의 가장 최상위 폴더
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            ex3. 고객 방문 환경 : DNS (ex. http://www.thespesieslab.com)
+                            <ol>
+                                <li>
+                                    DNS - Domain Naming Service
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>상대경로 (R.Path = Ralaive Path)</h3>
+                    <p>
+                        현재파일을 기준으로 파일의 위치를 작성하는 방법<br>현재 파일에서 <mark>목적지까지 이동하는 경로</mark>만 적는다
+                    </p>
+                    <ul>
+                        <li>
+                            ex1. 현재 이미지 파일 불러오기 > 같은 선상에 있는 "images"폴더를 적고 파일명만 적으면 끝 <br>
+                            <em><strong> "images/file_example_JPG_2500KB.jpg"</strong></em>
+                        </li>
+                        <li>
+                            단, 상위폴더를 칭해야 할때 = <strong>"../"</strong> 한번 사용 할 때마다 한단계 상위
+                        </li>
+                    </ul>
+                </article>
+                
+                <img src="../images/image_sample.jpg" alt="늘어져버린쬬이" style="width: 30%;">
+
+                <div class="example-box">
+                    <h3>
+                        &lt;img&gt; 태그 : 이미지를 불러오는 태그
+                    </h3>
+                    <pre><code>
+                        &lt;img src="../images/image_sample.jpg" alt="늘어져버린쬬이" style="width: 30%;"&gt;
+                    </code></pre>
+                    <ul>
+                        <li>
+                            <strong>src</strong> : <em>"나는 가만히 있을테니까 너가 와~!!"</em><mark>가져와!</mark>
+                        
+                        </li>
+                        <li><strong>href</strong> : <em>"내가 갈테니까 기다려~</em><mark>연결해!</mark>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>alt</strong> : aleternaver Text = 대체 텍스트 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            시각장애인들은 이미지를 볼 수 없기 떄문에 이미지의 내용을 전달하기 위함.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            안정화된 최대 자수는 255자 이내 권장, 이상 초과 될 경우 longdesc라는 attr이 있었으나 현재는 사용불가로 전환됨.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            figure / figcaption tag를 사용해야함.
+                        </li>
+                    </ul>
+                </div>
+                <div class="example-box">
+                    <h3>attr 이란 ?</h3>
+                    <p>
+                        <strong>attr(Attribute) = 태그의 속성</strong><br>
+                        태그의 추가 정보를 주거나 동작을 설정하는 역할<br><br>
+                        attr 예시 > src, href, alt, id, class, title, width, height, style 등
+                    </p>
+                </div>
+            </section>
+
+            <section id="mediaSummary">
+                <h2>
+                    비디오, 오디오태그에 대해 알아보자!    
+                </h2>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            화면 개발 수업<br>
+            <small>Mabe BY. SR Yoon</small> <br>
+            <cite>© 2026 All Rights Reserved.</cite>
+        </p>
+    </footer>
+    
+
+</body>
+</html>
