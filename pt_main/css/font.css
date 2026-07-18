@@ -1,0 +1,70 @@
+/* MAIN SCALE (PINK) */
+    .co-pk07{
+        color: #D74B5A;
+    }
+
+    .co-pk06{
+        color: #F96474;
+    }
+
+    .co-pk05{
+        color: #F98E9A;
+    }
+
+    .co-pk04{
+        color: #f99da7
+    }
+
+    .co-pk03{
+        color: #ffb9b9;
+    }
+
+    .co-pk02{
+        color: #ffd7d7;
+    }
+
+    .co-pk01{
+        color: #FFF7F7;
+    }
+
+/* GRAY SCALE */
+    .co-gs08{
+        color: #4E4E4E;
+    }
+
+    .co-gs07{
+        color: #666666;
+    }
+
+    .co-gs06{
+        color: #A6A6A6;
+    }
+
+    .co-gs05{
+        color: #ACACAC;
+    }
+
+    .co-gs04{
+        color: #CCCCCC;
+    }
+
+    .co-gs03{
+        color: #E0E0E0;
+    }
+
+    .co-gs02{
+        color: #F3F3F3;
+    }
+
+
+/* font size */
+
+    .sz-14{
+        font-size: 14px;
+    }
+
+/* 문단 */
+/* 문단 - 들여쓰기 */
+    .indent30{
+        padding-left: 30px;
+    }

@@ -5,15 +5,29 @@
     font-weight: 400;
     font-style: normal;
 }
-body {
-    font-family: 'Paperlogy', sans-serif; line-height: 1.5; background-color: #fff8f8; margin: 0px;
+html,body{
+    height:100%;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Paperlogy', sans-serif; line-height: 1.5; background-color: #FFF7F7; margin: 0px; display: flex; flex-direction: column;
+}
+main{
+    flex: 1;
 }
 
 /* 기본 설정 */
 a{
     text-decoration: none; color: black;
 }
-
+.btn-top{
+    position: fixed; right: 30px; bottom: 30px;
+}
+.btn-top span{
+    color: #F98E9A; font-size: 50px;
+}
 /* 로고 이미지 조정 */
 header h1 img{ 
     width: 150px; height: auto; padding-left: 20px;
@@ -44,20 +58,20 @@ main{
 }
 /* 콘텐츠 - 버튼 */
 .btn-page1,.btn-page2{
-    display: inline-block; border-color: pink; padding: 8px; border-radius: 5px;
+    display: inline-block; border-color: #F98E9A; padding: 8px; border-radius: 5px;
 }
 .btn-page1{
-    background-color: rgb(255, 215, 215);
+    background-color: #ffd7d7;
 }
 .btn-page2{
-    background-color: rgb(255, 185, 185);
+    background-color: #ffb9b9;
 }
 .contentArea section{
     scroll-margin-top: 30px;
 }
 /* 콘텐츠 - 요소 */
 .example-box{
-    max-width: 900px; border: 2px solid rgb(249, 157, 167); padding: 15px; margin: 20px 0; background-color: white;
+    max-width: 900px; border: 2px solid #f99da7; padding: 15px; margin: 20px 0; background-color: white;
 }
 
 /* 사이드바 영역 */
@@ -81,4 +95,28 @@ aside nav ul li ol li a{
 }
 ol{
     padding: 10px;
+}
+
+/* 푸터 영역 */
+footer{
+    background-color: #ffb9b9; margin-top: 100px;
+}
+.footerDiv1{
+    display: flex; border-bottom: 1px solid #f99da7;
+}
+.footerDiv1 img{
+    width: 130px; height: 65px; padding: 10px 0 10px 30px;
+}
+.footerDiv1 nav{
+    flex: 1;
+}
+.footerDiv1 nav ul{
+    display: flex; justify-content: center; gap: 30px; list-style: none; padding-top: 13px;
+}
+
+.footerDiv2{
+    display: flex; padding:80px 30px 30px;
+}
+.footerDiv2 cite{
+    margin-left:auto;
 }

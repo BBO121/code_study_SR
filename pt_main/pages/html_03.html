@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블공부하기!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_circle_up" />
+</head>
+<body id="topArea">
+   <header>
+        <h1>
+            <a href="index.html">
+                <img src="../images/logo.png" alt="welcome to BBoblising!">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">개요</a></li>
+                <li><a href="summary.html">수업</a></li>
+                <li><a href="practice.html">실습</a></li>
+                <li><a href="#">개인연습</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="co-pk06" href="#">HTML</a>
+                        <ol>
+                            <li><a href="summary.html">h & p </a></li>
+                            <li><a href="html_02.html">list & images</a></li>
+                            <li><a href="html_03.html">hyperlink</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="html_06.html">div & semantic</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a class="co-pk06" href="#">CSS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a class="co-pk06" href="#">JS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="contentArea">
+            <nav>
+                <ul>
+                    <li><a class="btn-page1" href="#hyperlinkSummary"><strong>hyperlink</strong></a></li>
+                    <li><a class="btn-page1" href="#nameAnvhorSummary"><strong>Name Anvhor</strong></a></li>
+                </ul>
+            </nav>
+            <section id="hyperlinkSummary">
+                <h2 class="co-pk07">
+                    hyperlink List에 대해 알아보자! <br>
+                </h2>
+                        <span><strong>&lt;hyperLink&gt;</strong>를 이용하여 원하는 url 및 url 내 위치로 이동하는 법, 그외 기타 다양한 버튼 액션을 배워보자.</span>
+                <ul>
+                    <li>
+                        <a href="https://naver.com" target="_blank">naver button</a>
+                    </li>
+                    <li>
+                        <a href="https://daum.net" target="_self">daum button</a>
+                    </li>
+                    <li>
+                        <a href="../step2.zip">download button</a>
+                    </li>
+                    <li>
+                        <a href="mailto:ysarang3000@gmail.com?subject='문의남깁니다.'">email send button</a>
+                    </li>
+                    <li>
+                        <a href="tel:+821099559198">cell button</a>
+                    </li>
+                    <li>
+                        <a href="#targetAnchor">named Anchor button</a>
+                    </li>
+                </ul>
+                <div class="example-box">
+                   <h3>
+                       target 값
+                   </h3> 
+                   <p>
+                    <strong>_self</strong> = 현재 시스템에서 세션을 유지해야 할 경우 ,<br>
+                    <strong>_blank</strong> = 세션을 유지할 필요가 없을 때 (아예 시스템이 바뀌는 상황) 새 탭으로 열어줘야함.
+                    </p>
+                    <pre><code>
+                        &lt;ul>
+                            &lt;li>
+                                &lt;a href="https://naver.com" target="_blank">naver button&lt;/a>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="https://daum.net" target="_self">daum button&lt;/a>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="../step2.zip">download button&lt;/a>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="mailto:ysarang3000@gmail.com?subject='문의남깁니다.'">email send button&lt;/a>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="tel:+821099559198">cell button&lt;/a>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="#targetAnchor">named Anchor button&lt;/a>
+                            &lt;/li>
+                        &lt;/ul>
+                    </code></pre>
+                </div>
+            <section id="nameAnvhorSummary">
+                <h2 class="co-pk07">
+                    Name Anvhor에 대해 알아보자! <br>
+                </h2>
+                <ul id="menu">
+                    <li><a href="#page1">1page</a></li>
+                    <li><a href="#page2">2page</a></li>
+                    <li><a href="#page3">3page</a></li>
+                    <li><a href="#page4">4page</a></li> 
+                </ul>
+                <div id="page1">1page</div>
+                <div id="page2">2page</div>
+                <div id="page3">3page</div>
+                <div id="page4">4page</div>
+                <p>
+                    <strong>id와 a의 href 를 통일하면 이동할 수 있다!</strong> <br>
+                    보통 스크롤이 부드럽게 되는 css (혹은 style) 을 쓰거나 해서 많이 사용함. <br>
+                    <pre><code>
+                        &lt;style>
+                            html,body{
+                            margin: 0; height: 100%; scroll-behavior: smooth;
+                            }
+                        &lt;/style>
+                    </code></pre>
+
+                </p>
+            </section>
+            <div class="example-box">
+                <pre><code>
+                    &lt;ul id="menu">
+                        &lt;li>&lt;a href="#page1">1page&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#page2">2page&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#page3">3page&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#page4">4page&lt;/a>&lt;/li> 
+                    &lt;/ul>
+                    &lt;div id="page1">1page&lt;/div>
+                    &lt;div id="page2">2page&lt;/div>
+                    &lt;div id="page3">3page&lt;/div>
+                    &lt;div id="page4">4page&lt;/div>
+                </code></pre>
+            </div>
+
+        </div>
+
+            
+
+
+
+    <a class="btn-top" href="#topArea">
+        <span class="material-symbols-outlined">arrow_circle_up</span>
+    </a>   
+    
+    
+    </main>
+
+
+    <footer>
+        <div class="footerDiv1">
+            <img src="../images/logo.png" alt="bye, BBoblising!">
+            <nav>
+                <ul>
+                    <li><a href="index.html">개요</a></li>
+                    <li><a href="summary.html">수업</a></li>
+                    <li><a href="practice.html">실습</a></li>
+                    <li><a href="#">개인연습</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerDiv2">
+            <span class="co-pk06">Mabe By. SR Yoon</span>
+            <cite class="co-pk06">© 2026 All Rights Reserved.</cite>
+        </div>
+    </footer>

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>퍼블공부하기!</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_circle_up" />
 </head>
-<body>
+<body id="topArea">
     <header>
         <h1>
             <a href="index.html">
@@ -27,18 +29,18 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">HTML</a>
+                        <a class="co-pk06" href="#">HTML</a>
                         <ol>
                             <li><a href="summary.html">h & p </a></li>
                             <li><a href="html_02.html">list & images</a></li>
-                            <li><a href="#">step3</a></li>
+                            <li><a href="html_03.html">hyperlink</a></li>
                             <li><a href="#">step4</a></li>
                             <li><a href="#">step5</a></li>
                             <li><a href="html_06.html">div & semantic</a></li>
                         </ol>
                     </li>
                     <li>
-                        <a href="#">CSS</a>
+                        <a class="co-pk06" href="#">CSS</a>
                         <ol>
                             <li><a href="#">step1</a></li>
                             <li><a href="#">step2</a></li>
@@ -49,7 +51,7 @@
                         </ol>
                     </li>
                     <li>
-                        <a href="#">JS</a>
+                        <a class="co-pk06" href="#">JS</a>
                         <ol>
                             <li><a href="#">step1</a></li>
                             <li><a href="#">step2</a></li>
@@ -63,7 +65,6 @@
             </nav>
         </aside>
         <div class="contentArea">
-            <h2>list 태그에 대해 알아보자!</h2>
             <nav>
                 <ul>
                     <li><a class="btn-page1" href="#ulSummary"><strong>ul</strong></a></li>
@@ -76,9 +77,10 @@
             </nav>
             
             <section id="ulSummary">
-                <h2>
-                    <strong>&lt;ul&gt;</strong> : unordered list 의 약자
+                <h2 class="co-pk07">
+                    list 태그에 대해 알아보자! <br>
                 </h2>
+                <span><strong>&lt;ul&gt;</strong> : unordered list 의 약자</span>
                 <ul>
                     <li>
                         속성값(bullet type)은 3개 circle, disc, square가 있으나 모두css에서 처리해야함
@@ -179,7 +181,7 @@
                 </p>
             </div>
             <section id="imageSummary">
-                <h2>이미지 태그에 대해 알아보자!</h2>
+                <h2 class="co-pk07">이미지 태그에 대해 알아보자!</h2>
                 <mark><em>경로 = Path = 파일이 있는 위치를 적는 방식</em></mark>
                 <article>
                     <h3>절대경로 (A.Path = Absolute Path)</h3>
@@ -261,22 +263,32 @@
             </section>
 
             <section id="mediaSummary">
-                <h2>
+                <h2 class="co-pk07">
                     비디오, 오디오태그에 대해 알아보자!    
                 </h2>
 
             </section>
         </div>
+    <a class="btn-top" href="#topArea">
+        <span class="material-symbols-outlined">arrow_circle_up</span>
+    </a>
     </main>
     <footer>
-        <hr>
-        <p>
-            화면 개발 수업<br>
-            <small>Mabe BY. SR Yoon</small> <br>
-            <cite>© 2026 All Rights Reserved.</cite>
-        </p>
+        <div class="footerDiv1">
+            <img src="../images/logo.png" alt="bye, BBoblising!">
+            <nav>
+                <ul>
+                    <li><a href="index.html">개요</a></li>
+                    <li><a href="summary.html">수업</a></li>
+                    <li><a href="practice.html">실습</a></li>
+                    <li><a href="#">개인연습</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerDiv2">
+            <span class="co-pk06">Mabe By. SR Yoon</span>
+            <cite class="co-pk06">© 2026 All Rights Reserved.</cite>
+        </div>
     </footer>
-    
-
 </body>
 </html>
