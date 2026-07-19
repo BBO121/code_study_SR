@@ -85,6 +85,9 @@ td,th{
 .html-05-img input{
     width: 350px; height: auto;
 }
+figure img{
+    width: 800px; height: auto;
+}
 
 /* 사이드바 영역 */
 aside{
