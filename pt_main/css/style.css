@@ -73,6 +73,18 @@ main{
 .example-box{
     max-width: 900px; border: 2px solid #f99da7; padding: 15px; margin: 20px 0; background-color: white;
 }
+td,th{
+    border-bottom: 1px solid #f99da7;
+}
+.html-04-ol{
+    list-style: none; padding-left: 30px;
+}
+.html-05-ol{
+    padding-left: 30px;
+}
+.html-05-img input{
+    width: 350px; height: auto;
+}
 
 /* 사이드바 영역 */
 aside{

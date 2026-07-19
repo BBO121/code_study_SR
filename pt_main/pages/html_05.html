@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블공부하기!</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_circle_up">
+</head>
+<body id="topArea">
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="../images/logo.png" alt="welcome to BBoblising!">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">개요</a></li>
+                <li><a href="summary.html">수업</a></li>
+                <li><a href="practice.html">실습</a></li>
+                <li><a href="#">개인연습</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="co-pk06" href="#">HTML</a>
+                        <ol>
+                            <li><a href="summary.html">h & p </a></li>
+                            <li><a href="html_02.html">list & images</a></li>
+                            <li><a href="html_03.html">hyperlink</a></li>
+                            <li><a href="html_04.html">table</a></li>
+                           <li><a href="html_05.html">form</a></li>
+                            <li><a href="html_06.html">div & semantic</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a class="co-pk06" href="#">CSS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a class="co-pk06" href="#">JS</a>
+                        <ol>
+                            <li><a href="#">step1</a></li>
+                            <li><a href="#">step2</a></li>
+                            <li><a href="#">step3</a></li>
+                            <li><a href="#">step4</a></li>
+                            <li><a href="#">step5</a></li>
+                            <li><a href="#">step6</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="contentArea">
+            <nav>
+                <ul>
+                    <li><a class="btn-page1" href="#html4inputSummary"><strong>HTML4 Input's</strong></a></li>
+                    <li><a class="btn-page1" href="#html5inputSummary"><strong>HTML5 Input's</strong></a></li>
+                </ul>
+            </nav>
+            <section id="html4inputSummary">
+                <h2 class="co-pk07">
+                    form > Input Tag 입력관련태그에 대해 알아보자!
+                </h2>
+                <div class="example-box">
+                    <p>
+                        <strong>Input - display : inline-block</strong> <br>
+                        id는 backEnd가 직접적으로 사용하는 속성이기 때문에 상호 협의하에 작성하거나 상식적인 선 내 web 상 naming 규칙을 따름
+                        <ol class="html-05-ol">
+                            <li>한글, 띄어쓰기, 특문금지</li>
+                            <li>숫자나 대문자가 앞에 오면 안됨</li>
+                            <li>영문키워드 2개 이상을 조합히야함 (모든 언어에는 예약어 개념이 존재 = 이미 선점된 단어들) <br> 만약 lable사용이 불가능 할 시에 title을 항시 제공해야 한다.</li>
+                        </ol>
+                    </p>
+                </div>
+                <form>
+                    <fieldset>
+                        <legend>HTML4 Input's</legend>
+                        <div class="example-box">
+                            <ul>
+                                <li><strong>&lt;form&gt;</strong> : input 들을 담는 바구니 (부모로 치지 않는다. 있어도 없는 태그라고 불림) :</li>
+                                <li><strong>&lt;fieldset&gt;</strong> : input 들을 분류하는 태그</li>
+                                <li><strong>&lt;legend&gt;</strong> : form에 제목을 붙여주는 태그</li>
+                            </ul>
+                           
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="cliID">사용자 아이디 :</label>
+                            <input type="text" id="cliID">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="text"</h3>
+                            <span>
+                                &gt;&gt;모든 문자를 다 담을수 있음
+                            </span>
+                            <pre><code>
+                                &lt;label for="cliID">사용자 아이디 :&lt;/label>
+                                &lt;input type="text" id="cliID">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="cliPW">사용자 비밀번호 :</label>
+                            <input type="password" id="cliPW">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="password"</h3>
+                            <pre><code>
+                                &lt;label for="cliPW">사용자 비밀번호 :&lt;/label>
+                                &lt;input type="password" id="cliPW">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                            <label for="btn_radio1">radio1</label>
+                            <input type="radio" name="radioGroup" id="btn_radio2">
+                            <label for="btn_radio2">radio2</label>
+                            <input type="radio" name="radioGroup" id="btn_radio3">
+                            <label for="btn_radio3">radio3</label>
+                            <input type="radio" name="radioGroup" id="btn_radio4">
+                            <label for="btn_radio4">radio4</label>
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="radio"</h3>
+                            <p>
+                                입력 태그 타입 radio는 라디오 버튼(or컨디션 (이거나 조건)) 
+                                <ul>
+                                    <li>name을 같은 이름으로 여러 항목을 지정시 그룹화 된다.</li>
+                                    <li>label을 이용하여 해당 항목과 버튼을 연결해줄 필요가 있다.</li>
+                                    <li>value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.</li>
+                                    <li>
+                                        checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다. <br>
+                                        <small>cheackbox와는 달리 하나의 항목만 선택 가능하다.</small>
+                                    </li>
+                                </ul>
+                            </p>
+                            <pre><code>
+                            &lt;label for="btn_radio1">radio1&lt;/label>
+                            &lt;input type="radio" name="radioGroup" id="btn_radio2">
+                            &lt;label for="btn_radio2">radio2&lt;/label>
+                            &lt;input type="radio" name="radioGroup" id="btn_radio3">
+                            &lt;label for="btn_radio3">radio3&lt;/label>
+                            &lt;input type="radio" name="radioGroup" id="btn_radio4">
+                            &lt;label for="btn_radio4">radio4&lt;/label>
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="checkbox" id="btn_chk1">
+                            <label for="btn_chk1">check1</label>
+                            <input type="checkbox" id="btn_chk2">
+                            <label for="btn_chk2">check2</label>
+                            <input type="checkbox" id="btn_chk3">
+                            <label for="btn_chk3">check3</label>
+                            <input type="checkbox" id="btn_chk4">
+                            <label for="btn_chk4">check4</label>
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="checkbox"</h3>
+                            <ul>
+                                <li>입력태그타입 checkbox는 다중 선택을 지원 하는 input이며, label을 이용하여 해당 항목과 연결해야 한다.</li>
+                                <li>value 값은 기존 input 과 동일</li>
+                                <li>checked 옵션 역시 radio input 과 동일</li>
+                            </ul>
+                            <pre><code>
+                                &lt;input type="checkbox" id="btn_chk1">
+                                &lt;label for="btn_chk1">check1&lt;/label>
+                                &lt;input type="checkbox" id="btn_chk2">
+                                &lt;label for="btn_chk2">check2&lt;/label>
+                                &lt;input type="checkbox" id="btn_chk3">
+                                &lt;label for="btn_chk3">check3&lt;/label>
+                                &lt;input type="checkbox" id="btn_chk4">
+                                &lt;label for="btn_chk4">check4&lt;/label>
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                        <label for="selectjob">직업 선택 :</label>
+                            <select id="selectjob">
+                                <optgroup label="구직자">
+                                    <option>무직</option>
+                                    <option>학생</option>
+                                </optgroup>
+                                <optgroup label="근로자">
+                                    <option>전문직</option>
+                                    <option>공무원</option>
+                                </optgroup>
+                            </select>
+                        </span>
+                        <div class="example-box">
+                            <h3>&lt;select&gt;</h3>
+                            <ul>
+                                <li>select는 선택항목의 목록형 단축 메뉴 형식으로 만드는 입력 양식</li>
+                                <li>항목 수 만큼의 option이 필요하고, 이 안의 value로 값을 전달한다.</li>
+                                <li>optgroup으로 중간 그룹을 설정 할 수 있다.</li>
+                                <li>radio, checkbox처럼 외형 변경이 어렵다.</li>
+                            </ul>
+                            <pre><code>
+                                &lt;label for="selectjob">직업 선택 :&lt;/label>
+                                &lt;select id="selectjob">
+                                    &lt;optgroup label="구직자">
+                                        &lt;option>무직&lt;/option>
+                                        &lt;option>학생&lt;/option>
+                                    &lt;/optgroup>
+                                    &lt;optgroup label="근로자">
+                                        &lt;option>전문직&lt;/option>
+                                        &lt;option>공무원&lt;/option>
+                                    &lt;/optgroup>
+                                &lt;/select>
+                            </code></pre>
+                        </div>
+                        <span class="html-05-img">
+                            <input type="image" src="../images/image_sample_ddu03.jpg" alt="imgButton">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="image"</h3>
+                            <p>image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다.</p>
+                            <pre><code>
+                                &lt;input type="image" src="../images/image_sample_ddu03.jpg" alt="imgButton">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="button" value="비밀번호확인">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="button"</h3>
+                            <p>button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다.</p>
+                            <pre><code>
+                                &lt;input type="button" value="비밀번호확인">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="file">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="file"</h3>
+                            <p>file은 파일 찾아보기 버튼에 사용한다</p>
+                            <pre><code>
+                                &lt;input type="file">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="submit" value="전송">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="file"</h3>
+                            <p>
+                                summit은 해당 폼 내 모든 input의 유효성을 검수하고 전송을 담당.<br>
+                                <mark>반드시 form 안에 위치해야함!!!!!</mark>
+                            </p>
+                            <pre><code>
+                                &lt;input type="submit" value="전송">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <input type="reset" value="취소">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="reset"</h3>
+                            <p>
+                                reset은 해당 폼의 모든 양식 내용을 초기화(아예 없는 상태) 시킬 때 사용한다.<br>
+                                <mark>반드시 form 안에 위치해야함!!!!!</mark>
+                            </p>
+                            <pre><code>
+                                &lt;input type="reset" value="취소">
+                            </code></pre>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="html5inputSummary">
+                <h2 class="co-pk07">
+                    html5 이후에 나온 input 태그를 알아보자!
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>HTML5 Input's</legend>
+                        <span class="sz-20 co-pk06">
+                            <label for="userEmail">사용자 이메일 :</label>
+                            <input type="email" id="userEmail" required readonly>
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="email"</h3>
+                            <p>
+                                type 을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @버튼이 생긴다. <br>
+                                placeholder 로 예시로 적어둘 수 있다.(ie10이하 지원불가)
+                            </p>
+                            <ul>
+                                <li><strong>readonly</strong> : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기) - 저장된적 있던 정보 - ex 아이디</li>
+                                <li><strong>disabled</strong> : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)</li>
+                                <li><strong>enabled</strong> : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)</li>
+                            </ul>
+                            <pre><code>
+                                &lt;label for="userEmail">사용자 이메일 :&lt;/label>
+                                &lt;input type="email" id="userEmail" required readonly>
+                            </code></pre>
+                        </div>
+
+                    <!-- 
+                        type 을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @버튼이 생긴다. placeholder (ie10이하 지원불가)
+                    -->
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    <a class="btn-top" href="#topArea">
+        <span class="material-symbols-outlined">arrow_circle_up</span>
+    </a>
+    </main>   
+    <footer>
+        <div class="footerDiv1">
+            <img src="../images/logo.png" alt="bye, BBoblising!">
+            <nav>
+                <ul>
+                    <li><a href="index.html">개요</a></li>
+                    <li><a href="summary.html">수업</a></li>
+                    <li><a href="practice.html">실습</a></li>
+                    <li><a href="#">개인연습</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerDiv2">
+            <span class="co-pk06">Mabe By. SR Yoon</span>
+            <cite class="co-pk06">© 2026 All Rights Reserved.</cite>
+        </div>
+    </footer>
+</body>
+</html>
