@@ -58,7 +58,8 @@ main{
 }
 /* 콘텐츠 - 버튼 */
 .btn-page1,.btn-page2{
-    display: inline-block; border-color: #F98E9A; padding: 8px; border-radius: 5px;
+    display: inline-block;
+    border-color: #F98E9A; padding: 8px; border-radius: 5px;
 }
 .btn-page1{
     background-color: #ffd7d7;
@@ -66,6 +67,17 @@ main{
 .btn-page2{
     background-color: #ffb9b9;
 }
+
+/* 시안 - 버튼 */
+.btn-pt{
+    background-color: #ffd7d7; padding: 8px; border-radius: 5px; border: 2px solid #F98E9A; color: #D74B5A;
+    position: absolute;
+}
+.btn-pt-header{
+    top: 20px;
+    left: 20px; 
+}
+
 .contentArea section{
     scroll-margin-top: 30px;
 }
@@ -85,8 +97,14 @@ td,th{
 .html-05-img input{
     width: 350px; height: auto;
 }
-figure img{
-    width: 800px; height: auto;
+.img-box{
+    position: relative; display: inline-block;
+}
+.img-box img{
+    width: 800px; height: auto; display: block;
+}
+.slice-image{
+    width: 800px; height: auto; display: block; margin: 0 auto;
 }
 
 /* 사이드바 영역 */
