@@ -84,12 +84,12 @@
                     <p>
                         <strong>Input - display : inline-block</strong> <br>
                         id는 backEnd가 직접적으로 사용하는 속성이기 때문에 상호 협의하에 작성하거나 상식적인 선 내 web 상 naming 규칙을 따름
-                        <ol class="html-05-ol">
-                            <li>한글, 띄어쓰기, 특문금지</li>
-                            <li>숫자나 대문자가 앞에 오면 안됨</li>
-                            <li>영문키워드 2개 이상을 조합히야함 (모든 언어에는 예약어 개념이 존재 = 이미 선점된 단어들) <br> 만약 lable사용이 불가능 할 시에 title을 항시 제공해야 한다.</li>
-                        </ol>
                     </p>
+                    <ol class="html-05-ol">
+                        <li>한글, 띄어쓰기, 특문금지</li>
+                        <li>숫자나 대문자가 앞에 오면 안됨</li>
+                        <li>영문키워드 2개 이상을 조합히야함 (모든 언어에는 예약어 개념이 존재 = 이미 선점된 단어들) <br> 만약 lable사용이 불가능 할 시에 title을 항시 제공해야 한다.</li>
+                    </ol>
                 </div>
                 <form>
                     <fieldset>
@@ -140,17 +140,17 @@
                         <div class="example-box">
                             <h3>input type="radio"</h3>
                             <p>
-                                입력 태그 타입 radio는 라디오 버튼(or컨디션 (이거나 조건)) 
-                                <ul>
-                                    <li>name을 같은 이름으로 여러 항목을 지정시 그룹화 된다.</li>
-                                    <li>label을 이용하여 해당 항목과 버튼을 연결해줄 필요가 있다.</li>
-                                    <li>value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.</li>
-                                    <li>
-                                        checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다. <br>
-                                        <small>cheackbox와는 달리 하나의 항목만 선택 가능하다.</small>
-                                    </li>
-                                </ul>
+                                입력 태그 타입 radio는 라디오 버튼(or컨디션 (이거나 조건))     
                             </p>
+                            <ul>
+                                <li>name을 같은 이름으로 여러 항목을 지정시 그룹화 된다.</li>
+                                <li>label을 이용하여 해당 항목과 버튼을 연결해줄 필요가 있다.</li>
+                                <li>value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.</li>
+                                <li>
+                                    checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다. <br>
+                                    <small>cheackbox와는 달리 하나의 항목만 선택 가능하다.</small>
+                                </li>
+                            </ul>
                             <pre><code>
                             &lt;label for="btn_radio1">radio1&lt;/label>
                             &lt;input type="radio" name="radioGroup" id="btn_radio2">
@@ -280,7 +280,26 @@
                                 &lt;input type="reset" value="취소">
                             </code></pre>
                         </div>
-                    </fieldset>
+                        <textarea title="하시고 싶은 말씀을 남겨주세요" cols="30" rows="10"></textarea>
+                        <ul>
+                            <li>여러줄을 입력 할 수 있는 텍스트 상자인 textarea는 cols로 가로 입력 너비, rows로 세로입력너비의 초기값을 설정할 수 있다.</li>
+                            <li>주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에 유의해야한다.</li>
+                        </ul>
+                        <div class="example-box">
+                            <h3>
+                                textare 주의점!
+                            </h3>
+                            <ul>
+                                <li>cols,rows attr은 css에서 사용해야함 (일단 예시로 써놓긴 했는데 원래는 css에서 해야한다는 뜻! 진짜 할땐 저거 삭제해야함!)</li>
+                                <li>Tag 입력불가 - 입력시 다양성 표현 불가</li>
+                                <li>resize기능은 css에서 꺼야함</li>
+                                <li>font역시 직접 지정해야만 변경됨</li>
+                            </ul>
+                            <pre><code>
+                                &lt;textarea title="하시고 싶은 말씀을 남겨주세요" cols="30" rows="10">&lt;/textarea>
+                            </code></pre>
+                        </div>  
+                    </fieldset>  
                 </form>
             </section>
             <section id="html5inputSummary">
@@ -301,20 +320,188 @@
                                 placeholder 로 예시로 적어둘 수 있다.(ie10이하 지원불가)
                             </p>
                             <ul>
+                                <li><strong>required</strong> : 반드시 입력해야 하는 필수입력</li>
                                 <li><strong>readonly</strong> : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기) - 저장된적 있던 정보 - ex 아이디</li>
                                 <li><strong>disabled</strong> : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)</li>
-                                <li><strong>enabled</strong> : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)</li>
+                                <li><strong>enabled</strong> : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)</li>  
                             </ul>
                             <pre><code>
                                 &lt;label for="userEmail">사용자 이메일 :&lt;/label>
                                 &lt;input type="email" id="userEmail" required readonly>
                             </code></pre>
                         </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="UserURL">웹사이트 :</label>
+                            <input type="url" id="UserURL" required>
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="url"</h3>
+                            <p>
+                                type 을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 떄, 키보드를 열면서 영문과 .com 버튼이 생기고<br>
+                                누르고 있으면 타 도메인으로 변경 가능
+                            </p>
+                            <pre><code>
+                                &lt;label for="UserURL">웹사이트 :&lt;/label>
+                                &lt;input type="url" id="UserURL" required>
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="userPN">전화번호:</label>
+                            <input type="tel" id="userPN" placeholder="-를 뺀 숫자만 입력하세요.">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="tel"</h3>
+                            <p>
+                                type을 tel로 설정하면 한줄로 전화번호 입력받는 양식 (-필수제외) <br>
+                                placeholder는 시각적정보만 담기 때문에 만약 label없이 사용할 경우 같은 내용의 title 필수.
+                            </p>
+                            <pre><code>
+                                &lt;label for="userPN">전화번호:&lt;/label>
+                                &lt;input type="tel" id="userPN" placeholder="-를 뺀 숫자만 입력하세요.">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="qty">수량 :</label>
+                            <input type="number" id="qty" min="1" max="10" step="1" value="1">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="number"</h3>
+                            <p>
+                                상,하 버튼(스피너)으로 숫자를 기입하거나 입력받는 박스.<br>
+                                <em>min : 최저 / max : 최대 / step : 상승값 / value : 초기값</em><br>
+                                <mark>절대 숫자입력 대용으로 사용하면 안됨. 반드시 수량 관련 부분에만 사용 할 것</mark>
+                            </p>
+                            <pre><code>
+                                &lt;label for="qty">수량 :&lt;/label>
+                                &lt;input type="number" id="qty" min="1" max="10" step="1" value="1">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="sizeSet">사이즈 :</label>
+                            <input type="range" id="sizeSet" min="250" max="280" step="10" value="250">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="range"</h3>
+                            <p>
+                                슬라이드바로 범위 중 하나의 값을 선택할 수 있는 인풋
+                            </p>
+                            <pre><code>
+                                &lt;label for="sizeSet">사이즈 :&lt;/label>
+                                &lt;input type="range" id="sizeSet" min="250" max="280" step="10" value="250">
+                            </code></pre>
+                        </div>
 
-                    <!-- 
-                        type 을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @버튼이 생긴다. placeholder (ie10이하 지원불가)
-                    -->
+                        <ul class="sz-20 co-pk06">
+                            <li>
+                                <label for="typeDate">연,월,일 선택 :</label>
+                                <input type="date" id="typeDate">
+                            </li>
+                            <li>
+                                <label for="typeDateTime">연,월,일,시,분 선택 :</label>
+                                <input type="datetime-local" id="typeDateTime">
+                            </li>
+                            <li>
+                                <label for="typeTime">시간 선택 :</label>
+                                <input type="time" id="typeTime">
+                            </li>
+                            <li>
+                                <label for="typeMonth">월 선택 :</label>
+                                <input type="month" id="typeMonth">
+                            </li>
+                            <li>
+                                <label for="typeWeek">주 선택 :</label>
+                                <input type="week" id="typeWeek">
+                            </li>
+                        </ul>
+                        <div class="example-box">
+                            <h3>
+                                input type="date" : 연,월,일 선택 <br>
+                                input type="datetime-local" : 연,월,일,시,분 선택 <br>
+                                input type="time" : 시간 선택 <br>
+                                input type="month" : 월 선택<br>
+                                input type="week" : 주 선택
+                            </h3>
+                            <p>
+                                input:date,datetime-local,time,month,week 는 i10 이하 지원 불가
+                            </p>
+                            <pre><code>
+                                &lt;label for="typeDate">연,월,일 선택 :&lt;/label>
+                                &lt;input type="date" id="typeDate">
+
+                                &lt;label for="typeDateTime">연,월,일,시,분 선택 :&lt;/label>
+                                &lt;input type="datetime-local" id="typeDateTime">
+
+                                &lt;label for="typeTime">시간 선택 :&lt;/label>
+                                &lt;input type="time" id="typeTime">
+
+                                &lt;label for="typeMonth">월 선택 :&lt;/label>
+                                &lt;input type="month" id="typeMonth">
+
+                                &lt;label for="typeWeek">주 선택 :&lt;/label>
+                                &lt;input type="week" id="typeWeek">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="searchField">검색 :</label>
+                            <input type="search" id="searchField">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="search"</h3>
+                            <p>
+                                search는 검색어만 전문으로 입력받는 필드. <br>
+                                X(자체리셋) 버튼이 존재하고 자동완성기능(autocomplete)지원
+                            </p>
+                            <pre><code>
+                                &lt;label for="searchField">검색 :&lt;/label>
+                                &lt;input type="search" id="searchField">
+                            </code></pre>
+                        </div>
+                        <span class="sz-20 co-pk06">
+                            <label for="typeColor">색상선택 :</label>
+                            <input type="color" id="typeColor">
+                        </span>
+                        <div class="example-box">
+                            <h3>input type="color"</h3>
+                            <p>
+                                olor chip을 기준으로 대상을 찾게 해주는 인풋
+                            </p>
+                            <pre><code>
+                                &lt;label for="typeColor">색상선택 :&lt;/label>
+                                &lt;input type="color" id="typeColor">
+                            </code></pre>
+                        </div>
                     </fieldset>
+                    <span class="sz-20 co-pk06">
+                        <input type="submit" value="전송">
+                    </span>
+                    <div class="example-box">
+                        <h3>input type="submit"</h3>
+                        <p>
+                            폼(form)의 내용을 서버로 전송하는 버튼 <br>
+                            required가 있는 입력란이 비어 있으면 제출되지 않는다.
+                        </p>
+                        <pre><code>
+                            &lt;input type="submit" value="전송">
+                        </code></pre>
+                    </div>
+                    <span class="sz-20 co-pk06">
+                        <input type="reset" value="취소">
+                    </span>
+                    <div class="example-box">
+                        <h3>input type="reset"</h3>
+                        <p>
+                            폼의 입력 내용을 초기 상태로 되돌리는 버튼 <br>
+                            입력했던 글자나 선택했던 값을 모두 초기화
+                        </p>
+                        <pre><code>
+                            &lt;input type="reset" value="취소">
+                        </code></pre>
+                    </div>
+                    <div class="example-box">
+                        <span>
+                            보통 이 두 input은 fieldset 밖에 쓰기도 한다!
+                        </span>
+                    </div>
                 </form>
             </section>
         </div>
