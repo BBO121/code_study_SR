@@ -73,11 +73,42 @@ main{
     background-color: #ffd7d7; padding: 8px; border-radius: 5px; border: 2px solid #F98E9A; color: #D74B5A;
     position: absolute;
 }
-.btn-pt-header{
-    top: 20px;
-    left: 20px; 
-}
-
+    .btn-demo1-header{
+        top: 20px;
+        left: 20px; 
+    }
+    .btn-demo1-ci{
+        top: 355px;
+        left: 20px; 
+    }
+    .btn-demo1-video{
+        top: 556px;
+        left: 20px; 
+    }
+    .btn-demo1-exp{
+        top: 830px;
+        left: 20px; 
+    }
+    .btn-demo1-team{
+        top: 1208px;
+        left: 20px; 
+    }
+    .btn-demo1-work{
+        top: 1564px;
+        left: 20px; 
+    }
+    .btn-demo1-poeple{
+        top: 1932px;
+        left: 20px; 
+    }
+    .btn-demo1-contect{
+        top: 2182px;
+        left: 20px; 
+    }
+    .btn-demo1-footer{
+        top: 2509px;
+        left: 20px; 
+    }
 .contentArea section{
     scroll-margin-top: 30px;
 }
