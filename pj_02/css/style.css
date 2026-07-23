@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-body{
-    font-family: "Source Sans 3";
+html,body{
+    height: 100%;
 }
 html{
     scroll-behavior:smooth;
 }
+body{
+    font-family: "Source Sans 3";
+    margin: 0; 
+}
+section.content01Area{
+    background-image: url('../images/bg_01.png');
+    background-size: 100%; background-repeat: no-repeat;
+}
+.wrap_content01_div{
+    margin: 160px;
+    padding-top: 106px;
+}
+    section .wrap_content01_div span{
+        font-size: 19px;
+    }
+    .wrap_content01_div h2{
+        font-size: 60px; font-weight: 900;
+    }
+    .wrap_content01_div p{
+        font-size: 26px; font-weight: 400;
+        width: 547px; white-space: normal;
+    }
+    ul.wrap_content01_ul{
+        padding-bottom: 100px;
+    }
+   
